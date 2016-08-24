@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font:14px/24px "Microsoft YaHei","微软雅黑"; color:#333; background-color:#fff; word-wrap:break-word;}
+*{ margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul,ol,li{ list-style:none outside;}
+a{ color:#333; text-decoration:none;}
+a:hover{ text-decoration:none;}
+.left{ float:left;}
+.right{ float:right;}
+.center{ text-align:center;}
+.tx_l{ text-align:left;}
+.tx_r{ text-align:right;}
+.tx_2{ text-indent:2em;}
+img{ border:medium none; vertical-align:middle;}
+textarea{ resize:none; vertical-align:middle;}
+input,button,select,textarea{ -webkit-appearance:none; border:medium none; background:none; outline:none; font:1em/normal "Microsoft YaHei","微软雅黑"; color:#333;}
+.btn{ cursor:pointer; font-size:14px;}
+.clearfix:after{ content:"."; display:block; clear:both; height:0; line-height:0; font-size:0; visibility:hidden;}
+
+
+/*患者捆绑*/
+.top{ position:fixed; z-index:1; width:100%; height:44px; line-height:44px; font-size:17px; color:#fff; text-align:center; background-color:#8b49ba;}
+.btm{ position:absolute; bottom:0; width:100%;}
+.btm img{ width:100%;}
+.container{ padding-top:44px;}
+.top a{ position:absolute; top:0; left:4%; display:block; width:10px; height:44px; background:url(../images/arrow_left.png) no-repeat left center;}
+.title{ height:50px; line-height:50px; font-size:21px; color:#5e2f7f; padding:0 4%;}
+.title_bg{ position:relative; padding-top:11px; background:url(../images/tit_bg.jpg) repeat-x;}
+.title_bg img{ position:absolute; top:0; right:0;}
+.info_box{ width:92%; margin:0 auto;}
+.info_body{ border:1px solid #999; border-radius:5px;}
+.input_line{ height:40px; line-height:40px; padding:0 4%; border-bottom:1px solid #999; font-size:16px;}
+.input_txt{ display:-webkit-box;}
+.input_txt .txt{ display:block; -webkit-box-flex:1;}
+.input_txt span{ display:block; width:64px; color:red; margin-left:4%;}
+.input_line input,.input_line select{ width:100%; height:40px;}
+.input_line select{ background:url(../images/arrow_down.jpg) no-repeat right center; color:#333;}
+.input_line:last-child{ border-bottom:0;}
+.input_line -webkit-input-placeholder{ color:#ccc;}
+.hint_info{ font-size:16px; color:#666; padding-top:2%;}
+.btn_box{ width:92%; margin:0 auto; padding:8% 0;}
+.btn_box .btn{ width:100%; height:45px; background-color:#5e2f7f; color:#fff; font-size:18px; border-radius:3px;}
+
+
+/*患者捆绑-医生信息*/
+.upload_tb{ font-size:16px; margin-left:4%;}
+.img_area{ height:40px; line-height:40px; border-bottom:1px solid #999; padding-right:4%;}
+.img_area label{ float:left;}
+.img_area span{ float:right; color:#5e2f7f;}
+.upload_tb a{ float:right; color:#5e2f7f;}
+.img_upload{ padding:4% 2% 0 3%;}
+.img_one{ position:relative; float:left; width:33%; height:65px; margin-bottom:6%;}
+.img_body{ position:absolute; top:0; left:50%; margin-left:-40px; width:80px; height:65px; text-align:center;}
+.add_btn,.add_file{ width:80px; height:65px; background:url(../images/add_btn.jpg) no-repeat;}
+.add_file{ position:relative; top:-65px; z-index:1; opacity:0;}
+.img_body img{ width:80px; height:65px;}
+.img_body .del_btn{ position:absolute; top:-9px; right:-4px; width:23px; height:23px; background:url(../images/del_btn.png) no-repeat; -webkit-background-size:100% 100%;}
+.upload_notice{ color:#666; line-height:26px; padding:2% 0;}
+.pop_box{ position:fixed; top:50%; left:50%; margin-top:-135px; margin-left:-46%; -webkit-box-sizing:border-box; width:92%; border:3px solid #5e2f7f; border-radius:5px;}
+.pop_box h4{ height:50px; line-height:50px; font-size:22px; background:url(../images/line.jpg) repeat-x; text-align:center; color:#fff;}
+.pop_cont{ background-color:#dddaef; padding:9% 12%;}
+.pop_cont p{ font-size:18px; font-weight:bold; line-height:32px; color:#5e2f7f;}
+.ensure_btn{ text-align:center; padding-top:20px;}
+.ensure_btn .btn{ width:100px; height:36px; font-size:17px; color:#fff; background-color:#5e2f7f;}
+
+
+/*科普文章*/
+.bg{ background-color:#dddaef;}
+.topnav{ position:fixed; z-index:1; width:100%; height:41px; line-height:41px; font-size:16px; background-color:#fff; text-align:center;}
+.topnav span{ display:inline-block; padding-right:18px; background:url(../images/arrow_down2.jpg) no-repeat right center;}
+.topnav ul{ width:194px; margin:0 auto;}
+.topnav ul li{ padding:0 3px; background-color:#8b49ba;}
+.topnav ul li a{ display:block; height:42px; line-height:42px; color:#fff; border-bottom:1px solid #fff; padding:0 46px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.topnav ul li:last-child a{ border-bottom:none;}
+.info_list{ width:92%; margin:0 auto; padding:19px 0;}
+.mt_41{ margin-top:41px;}
+.one_list{ background-color:#fff; border:1px solid #5e2f7f; border-radius:5px; padding:3% 12px 2%; line-height:18px; margin-bottom:4%; }
+.one_list a{ color:#ccc;}
+.one_list h4{ position:relative; font-size:16px; font-weight:normal; color:#5e2f7f; padding-bottom:2%;}
+.one_list img{ position:absolute; left:-17px; top:4px;}
+.one_list .time{ padding-top:2%; color:#8d8c8c;}
+
+
+/*科普文章-详细*/
+.article_box{ width:92%; margin:4% auto; padding:3% 4%; -webkit-box-sizing:border-box; border:1px solid #5e2f7f; border-radius:5px; background-color:#fff;}
+.article_box h4{ font-size:16px; line-height:20px; color:#5e2f7f;}
+.article_box .time{ color:#ccc; padding:2% 0;}
+.article_box .time a{ color:#8b49ba;}
+.article_box p{ text-indent:2em;}
+.article_box .img_box{ text-indent:0; padding:4% 0;}
+.article_box img{ width:100%;}
+.article_box .info a{ color:#666;}
+.article_box .praise{ display:inline-block; padding-left:25px; background:url(../images/praise.jpg) no-repeat 0 2px; margin-left:34px;}
+
+
+/*援助管理*/
+.new_apply{ position:fixed; z-index:1; width:92%; height:34px; background-color:#fff; padding:10px 4% 0; text-align:right;}
+.new_apply a{ display:inline-block; width:83px; height:24px; line-height:24px; color:#fff; background-color:#f39800; text-align:center; border-radius:5px;}
+.apply_list{ width:92%; margin:0 auto; padding:60px 0 19px;}
+.one_apply{ background-color:#fff; border:1px solid #5e2f7f; border-radius:5px; font-size:16px; margin:0 0 4% 11px; padding-left:21px;}
+.apply_access{ position:relative; display:-webkit-box; line-height:46px; border-bottom:1px solid #5e2f7f;}
+.apply_access h4{ -webkit-box-flex:1; font-weight:normal; color:#5e2f7f;}
+.apply_access input{ display:block; width:73px; height:23px; border-radius:5px; background-color:#5e2f7f; margin-top:11px; color:#fff; margin:11px 13px;}
+.apply_access span{ position:absolute; left:-33px; top:3px; display:block; width:28px; height:41px; line-height:41px; text-align:center; background:url(../images/order.png) no-repeat; color:#fff;}
+.apply_state{ line-height:30px; color:#8d8c8c; padding:1% 0;}
+.apply_march .apply_access span{ background:url(../images/order_on.png) no-repeat;}
+.apply_march .apply_state span{ color:#5e2f7f;}
+
+
+/*援助管理-通过申请*/
+.apply_info p{ display:-webkit-box; line-height:30px; padding:1% 4%; border-bottom:1px solid #ccc; font-size:18px;}
+.apply_info p:last-child{ border-bottom:none;}
+.apply_info div:last-child p:last-child{ border-bottom:1px solid #ccc;}
+.apply_info span{ display:block;}
+.apply_info .info{ -webkit-box-flex:1; text-align:right;}
+.apply_info .tit{ color:#5e2f73; background-color:#eee; border-bottom:none;}
+.apply_info .survey_btn{ width:80px; height:30px; background-color:#5e2f7f; color:#fff;}
+.apply_info img{ width:35px; height:27px; margin-top:2px;}
+.apply_info label{ margin:0 19px 0 28px;}
+.apply_info a{ color:#775691;}
+
+
+
+/*援助管理-患者分类*/
+.two_btn{ position:absolute; width:100%; top:50%; margin-top:-18%;}
+.two_btn .btn_box{ padding-bottom:10%; padding-top:0;}
+
+
+/*问题反馈*/
+.idea_box{ width:92%; margin:0 auto; padding-top:6%;}
+.idea_box textarea{ width:100%; height:160px; font-size:16px; border:1px solid #999; border-radius:5px; padding:2% 4%; -webkit-box-sizing:border-box;}
+.idea_box -webkit-textarea-placeholder{ color:#ccc;}
+
+
+/*项目通知-详细*/
+.article_box .tx_r{ padding:2% 0 10%;}
+
+
+/*问卷调查*/
+.answer_list{ padding:0 4%;}
+.answer_list ul li label{ display:-webkit-box; margin:2% 0;}
+.answer_list input{ display:block;}
+.radio{ width:14px; height:14px; margin:5px 16px 0 0; background:url(../images/radio.jpg) no-repeat; -webkit-background-size:100% 100%;}
+.radio:checked{ background:url(../images/radio_on.jpg) no-repeat;}
+.answer_list span{ display:block; -webkit-box-flex:1; font-size:16px;}
+
+
+/*联系我们*/
+.info_line{ display:-webkit-box; padding:1% 4%; border-bottom:1px solid #999; font-size:16px; line-height:30px; }
+.info_line:last-child{ border-bottom:none;}
+.info_line span{ display:block;}
+.info_line .name{ width:65px; margin-right:16px;}
+.info_line .info{ -webkit-box-flex:1;}
+
+
+/*指定医院查询*/
+/*.one_line{ height:42px; line-height:42px; font-size:16px; display:-webkit-box; padding-bottom:4%;}
+.one_line label{ display:block; margin-right:10px;}
+.one_line input{ display:block; -webkit-box-flex:1; height:40px; line-height:40px; padding:0 10px; border:1px solid #999; border-radius:5px;}*/
+
+
+/*指定医院查询-结果*/
+.query_result table{ width:100%; border-collapse:collapse; font-size:16px; text-align:left;}
+.query_result table caption{ background-color:#eee; text-align:left; padding:2% 4%;}
+.query_result tr th,.query_result tr td{ border-bottom:1px solid #ccc; padding:2% 0;}
+.query_result tr th:first-child,.query_result tr td:first-child{ padding-left:4%;}
+.query_result tr th:last-child,.query_result tr td:last-child{ padding-right:4%;}
+
+
+.cover_box{ position:fixed; z-index:2; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,0.6);}
+.img_body .scale{ position:fixed; z-index:3; top:28%; left:0; width:100%; height:auto;}
